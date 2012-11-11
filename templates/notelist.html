@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}
+    Everblog - Use Evernote as My blog DB.
+{% endblock %}
+
+{% block content %}
+    <h1>Tags:</h1>
+    <p>
+    {%  for tag in tag_list %}
+        {% if index %}
+            <a href="./tag/{{ tag[0] }}"><b>{{ tag[1] }}</b></a>
+        {% else %}
+            <a href="./{{ tag[0] }}"><b>{{ tag[1] }}</b></a>
+        {% endif %}
+    {% endfor %}
+    </p>
+    <h1>Posts:</h1>
+    <p class="important">
+    <ul>
+    {%  for note in note_list %}
+        {% if index %}
+            <li><a target="_blank" href="./{{ note[0]}}">{{ note[1] }}</a></li>
+        {% else %}
+            <li><a target="_blank" href="../{{ note[0]}}">{{ note[1] }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+    </p>
+{% endblock %}
