@@ -15,6 +15,7 @@ As you know，Evernote是目前最优秀的笔记应用，它包括标签(tag)�
 + Evernote可以分享笔记、笔记本，但是是“零碎”的，一方面不能集中展示，另一方面我想加入可配的条件，仅展示“特定内容”(Todo)
 
 + Evernote现在的问题是连接响应太慢，作为db会影响体验(一个简单的想法是吧tag和note相关的id放入内存中)
+//补充,考虑使用Redis
 
 + 目前仅完成基本查询功能，Todo很多 
 
@@ -24,5 +25,6 @@ As you know，Evernote是目前最优秀的笔记应用，它包括标签(tag)�
 
 + 使用了Python的flask+jinja2
 
-
 [@nourlcn](https://twitter.com/nourlcn)
+
+
